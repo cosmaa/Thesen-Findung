@@ -1,0 +1,88 @@
+\documentclass[12pt,reqno]{amsart}
+
+\usepackage{amssymb,amsfonts}
+\usepackage[a4paper, top=3cm, left=3cm, right=4cm, bottom=5cm]{geometry}
+\setlength{\parskip}{0pt}
+\usepackage[ngerman]{datetime}
+
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[colorlinks = true, linkcolor = black, citecolor = black, final]{hyperref}
+\usepackage{graphicx}
+\usepackage{todonotes} 
+\usepackage{multicol}
+
+
+\newcommand{\ds}{\displaystyle}
+\DeclareMathOperator{\sech}{sech}
+
+
+\setlength{\parindent}{0in}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+{\scshape \today} \hfill {\scshape \large Exposè} \hfill {\scshape Bachelor These}
+ 
+\smallskip
+
+\hrule
+
+\section*{ Fragestellung/Aufgabenstellung}
+
+\bigskip
+
+\begin{itemize}
+\item[(14.Juli.2020)] Automatisierte Erfassung der Kraken Nachrichten-Kanäle mit der Möglichkeit zur redaktionellen Aufbereitung bzw. Ergänzung der erfassten Informationen.
+\item[(24.Juli.2020)] Sicherung von implizitem Wissen 
+\end{itemize}
+
+\bigskip
+
+
+\section*{ Einleitung }
+
+Kraken ist ein X-Team innerhalb eines Software Projekts. Der Kontext ihrer Domain, impliziert ein hohes Maß an Kommunikation mit anderen Teams und externen Partnern. Diese Kommunikation wird durch Message-Queues mit ihren Events und Rest-Schnittstelle realisiert. Die Events und Schnittstellen sind explizites physisches Wissen. Diese aktuelle Abbildung der Realität beinhaltet kein implizites Wissen, also Entscheidungen die bis zu diesem Stand geführt haben. Diese Knowledg Base für diesen aktuellen Zustand sind in Software Tools wie Confluence und Jira hinterlegt, doch wichtige Entscheidungen, die getroffen wurden können hier verloren gehen. 
+
+\bigskip
+\section*{Motivation}
+
+Um zu gewährleisten dass Informationen zu fachlichen Kontexten nicht verloren gehen, ist eine kontinuierliche und strukturelle Dokumentation erforderlich. Eine gut gepflegte Wissensbasis ist in einem X-Team potenziell wichtig da durch Unbeständigkeit des Teams, Wissen über die Zeit verloren gehen kann [quelle]. Durch eine Toollösung soll dieses fachliche Wissen gespeichert werden. Die Nutzer dieses Tools sollen die Möglichkeit bekommen die generierten expliziten Informationen anzureichern mit fachlichen Entscheidungen.
+
+
+\bigskip
+
+
+
+\section*{Zielformulierung}
+In der Auftragserfassung fließen Information in Form von Nachrichten/ Ereignissen in die Systeme hinein und es werden im Rahmen der Verarbeitung wiederum Nachrichten an Drittsysteme verteilt. Diese Nachrichtenkanäle sollen um geschäftlich Relevante als auch Projekt bezogene Informationen angereichert werden. Nutzer erhalten damit einen Überblick der Abhängigkeiten zu anderen Teams und können die geschäftsbezogenen Daten für die Planung und Steuerung der Team-Aufgaben verwenden.
+\bigskip
+\textbf{}
+
+\bigskip
+
+
+\bigskip
+
+\section*{ Methodische Herangehensweise}
+
+
+\bigskip
+
+\section*{ Features}
+Automatisierte Erfassung der (technischen) Nachrichtenkanäle
+Visualisierung der erfassten Daten (Overview, Drilldown, ...)
+Erfassung redaktioneller Daten zu Ergänzung/Anreicherung der Artefakte (Messages, Drittsystem, ...) [eine Art CMS]
+Möglichkeit der Suche nach geschäftsrelevanten Metadaten
+
+
+\bigskip
+
+\medskip
+
+
+\end{document}
